@@ -13,7 +13,7 @@
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
-    "test": {
+    "production": {
         "username": "jtyif1gdjnyo30ry",
         "password": "p92coby896pjt50e",
         "database": "f1ilo7qgbay945ii",
