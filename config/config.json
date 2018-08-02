@@ -14,10 +14,7 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "jtyif1gdjnyo30ry",
-        "password": "p92coby896pjt50e",
-        "database": "f1ilo7qgbay945ii",
-        "host": "g9fej9rujq0yt0cd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
 }
