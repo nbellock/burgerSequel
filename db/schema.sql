@@ -1,43 +1,43 @@
--- -- Set up locally
+-- Set up locally
 
--- CREATE DATABASE burgers_db;
 
--- ` sequelize
--- db:
--- migrate `
--- ` sequelize
--- db:
--- seed:
--- all `
 
--- --- Set Up Sequelize index.js and config/config.json
--- ` sequelize init `
+` sequelize
+db:
+migrate `
+` sequelize
+db:
+seed:
+all `
 
--- --- Create Burgers.js model and Migrations
--- ` sequelize
--- model:
--- create --name burgers --attributes "burger_name:string devoured:boolean" `
+--- Set Up Sequelize index.js and config/config.json
+` sequelize init `
 
--- --- Creates Menus.js model and Migrations
--- ` sequelize
--- model:
--- create --name menus --attributes "item:string entree:boolean" `
+--- Create Burgers.js model and Migrations
+` sequelize
+model:
+create --name burgers --attributes "burger_name:string devoured:boolean" `
 
--- --- Run migration to get it into MySQL database
--- ` sequelize
--- db:
--- migrate `
+--- Creates Menus.js model and Migrations
+` sequelize
+model:
+create --name Menus --attributes "item:string entree:boolean" `
 
--- --- Create a seed file for burgers and menus 
--- ` sequelize
--- seed:
--- create --name burgers-seed `
--- ` sequelize
--- seed:
--- create --name menus-seed `
+--- Run migration to get it into MySQL database
+` sequelize
+db:
+migrate `
 
--- --- Run the Database seeder files
--- ` sequelize
--- db:
--- seed:
--- all `
+--- Create a seed file for urgers and menus 
+` sequelize
+seed:
+create --name burgers-seed `
+` sequelize
+seed:
+create --name menus-seed `
+
+--- Run the Database seeder files
+` sequelize
+db:
+seed:
+all `
