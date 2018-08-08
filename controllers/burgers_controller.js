@@ -33,7 +33,7 @@ router.get('/', function (req, res) {
 });
 
 //grabs menu to display on menu page
-router.get('/menu', function (req, res) {
+router.get('/Menu', function (req, res) {
     Menu.findAll({})
         .then(function (data) {
             res.render('restaurantMenu', {
