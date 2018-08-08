@@ -2,7 +2,7 @@
 
 module.exports = {
     up: function (queryInterface, Sequelize) {
-        return queryInterface.bulkInsert('menus', [{
+        return queryInterface.bulkInsert('Menus', [{
                 item: 'Mushroom Swiss Burger',
                 entree: 1,
                 createdAt: new Date(),
@@ -74,7 +74,7 @@ module.exports = {
     },
 
     down: function (queryInterface, Sequelize) {
-        return queryInterface.bulkDelete('menus', null, {
+        return queryInterface.bulkDelete('Menus', null, {
             truncate: true
         });
     }
