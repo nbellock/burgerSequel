@@ -2,7 +2,7 @@
 
     module.exports = {
         up: function (queryInterface, Sequelize) {
-            return queryInterface.bulkInsert('Burgers', [{
+            return queryInterface.bulkInsert('burgers', [{
                     burger_name: 'Mushroom Swiss Burger',
                     devoured: 0,
                     createdAt: new Date(),
@@ -30,7 +30,7 @@
         },
 
         down: function (queryInterface, Sequelize) {
-            return queryInterface.bulkDelete('Burgers', null, {
+            return queryInterface.bulkDelete('burgers', null, {
                 truncate: true
             });
         }
