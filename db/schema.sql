@@ -41,3 +41,27 @@
 -- db:
 -- seed:
 -- all `
+
+
+CREATE TABLE Burgers
+(
+    id INT
+    AUTO_INCREMENT NOT NULL,
+    burger_name VARCHAR
+    (50) NOT NULL,
+    devoured BOOLEAN NOT NULL DEFAULT 0,
+    createdat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY
+    (id)
+  );
+
+    CREATE TABLE Menus
+    (
+        id INT
+        AUTO_INCREMENT NOT NULL,
+    item VARCHAR
+        (50) NOT NULL,
+    entree BOOLEAN NOT NULL DEFAULT 1,
+    PRIMARY KEY
+        (id)
+  );
