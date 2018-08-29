@@ -17,14 +17,14 @@ module.exports = {
                 defaultValue: 0,
                 type: Sequelize.BOOLEAN
             },
-            // createdAt: {
-            //     allowNull: false,
-            //     type: Sequelize.DATE
-            // },
-            // updatedAt: {
-            //     allowNull: false,
-            //     type: Sequelize.DATE
-            // }
+            createdAt: {
+                allowNull: false,
+                type: Sequelize.DATE
+            },
+            updatedAt: {
+                allowNull: false,
+                type: Sequelize.DATE
+            }
         });
     },
     down: function (queryInterface, Sequelize) {
