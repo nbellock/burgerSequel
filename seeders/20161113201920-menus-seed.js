@@ -77,5 +77,5 @@ module.exports = {
         return queryInterface.bulkDelete('Menus', null, {
             truncate: true
         });
-        // }
-    };
+    }
+};
